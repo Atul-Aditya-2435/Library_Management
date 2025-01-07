@@ -9,32 +9,105 @@ A comprehensive system designed to manage library resources efficiently, facilit
 - **Transaction Management**: Handle book checkouts, returns, and track overdue items.
 - **Reporting**: Generate reports on library usage, popular books, and member activity.
 
-## Installation
+## Technologies Used
 
-1. **Clone the repository**:
+- **Frontend**: HTML, CSS, JavaScript
+- **Backend**: Python (Flask Framework)
+- **Database**: MySQL
+- **APIs**: RESTful APIs for communication between frontend and backend
 
+## Setup Instructions
+
+1. **Clone the Repository**:
+
+   ```bash
    git clone https://github.com/Atul-Aditya-2435/Library_Management.git
-2. **Navigate to the project directory**:
+   cd Library_Management
+   ```
 
-   dcd Library_Management
+2. **Install Dependencies**:
 
-3.  **Install dependencies**:
+   Ensure you have Python installed. Then, install the required packages:
 
-For Python projects:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-pip install -r requirements.txt
+3. **Set Up the Database**:
 
-For Node.js projects:
+   - Install MySQL and create a database named `library_management`.
+   - Execute the SQL scripts provided in the `database` directory to set up the necessary tables.
 
-npm install
+4. **Configure Environment Variables**:
 
-Set up the database:
+   - Rename `.env.example` to `.env`.
+   - Update the `.env` file with your database credentials and other configuration settings.
 
-Ensure you have MySQL installed.
-Create a database named library_management.
-Run the provided SQL scripts to set up the necessary tables.
+5. **Run the Application**:
 
+   ```bash
+   python app.py
+   ```
 
-Configure environment variables:
+6. **Access the Application**:
 
-Rename .env.example to .env and update the configuration settings as needed.
+   Open your web browser and navigate to `http://localhost:5000`.
+
+## Usage
+
+- **Admin Login**:
+
+  - Username: `admin`
+  - Password: `password`
+
+  *Note*: Change the default password after the first login for security purposes.
+
+- **Managing Books**:
+
+  - Navigate to the "Books" section to add, update, or delete book records.
+
+- **Managing Members**:
+
+  - Use the "Members" section to register new members or update existing member information.
+
+- **Handling Transactions**:
+
+  - In the "Transactions" section, manage book checkouts and returns, and monitor overdue items.
+
+## File Structure
+
+```
+Library_Management/
+├── app.py
+├── requirements.txt
+├── .env.example
+├── database/
+│   ├── schema.sql
+│   └── data.sql
+├── templates/
+│   ├── index.html
+│   ├── books.html
+│   └── members.html
+└── static/
+    ├── css/
+    └── js/
+```
+
+## Contributing
+
+We welcome contributions to enhance the Library Management System. To contribute:
+
+1. Fork the repository.
+2. Create a new branch: `git checkout -b feature/YourFeatureName`.
+3. Make your changes.
+4. Commit your changes: `git commit -m 'Add some feature'`.
+5. Push to the branch: `git push origin feature/YourFeatureName`.
+6. Open a pull request.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Contact
+
+For any inquiries or support, please contact Atul Aditya at atuladitya2435@example.com.
